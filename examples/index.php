@@ -34,13 +34,12 @@ if (isset($_GET['commentsEndpoint'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en" ng-app="angularTalk">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>angular-talk</title>
 
     <link href="static/example.css" rel="stylesheet"/>
-    <link href="../dist/css/angular-talk.min.css" rel="stylesheet"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 
 </head>
@@ -57,29 +56,35 @@ if (isset($_GET['commentsEndpoint'])) {
     </blockquote>
     <h2>Chat room</h2>
 
-    <div id="chat">
+
+    <app-root></app-root>
+
+    <!--<div id="chat">
         <?php
-        echo $chat->render();
-        ?>
+/*        echo $chat->render();
+        */?>
     </div>
 
     <h2>Comments engine</h2>
 
     <div id="comments">
         <?php
-        echo $comments->render();
-        ?></div>
+/*        echo $comments->render();
+        */?></div>
 
     <h2>Comments engine (Read Only)</h2>
 
     <div id="comments">
         <?php
-        $comments->readOnly=true;
+/*        $comments->readOnly=true;
         echo $comments->render();
-        ?></div>
-</div>
+        */?></div>
+</div>-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-<script src="../dist/js/angular-talk.tpls.js"></script>
+<script type="text/javascript" src="inline.bundle.js"></script>
+    <script type="text/javascript" src="polyfills.bundle.js"></script>
+    <script type="text/javascript" src="styles.bundle.js"></script>
+    <script type="text/javascript" src="vendor.bundle.js"></script>
+    <script type="text/javascript" src="main.bundle.js"></script>
 </body>
 </html>
