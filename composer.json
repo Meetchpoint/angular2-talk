@@ -1,0 +1,28 @@
+{
+  "name": "meetchpoint/angular2-talk",
+  "description": "Angular Chat Room and Comments Engine",
+  "keywords": [
+    "js",
+    "angular",
+    "chat",
+    "comments",
+    "php"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "David Zamora",
+      "email": "info@meetchpoint.com",
+      "homepage": "http://www.meetchpoint.com/"
+    }
+  ],
+  "require": {
+    "php": ">=5.3"
+  },
+  "autoload": {
+    "psr-0": {
+      "AngularTalk_": "src/"
+    }
+  }
+}
